@@ -210,7 +210,7 @@ body{
     background: #0A3871;
     color: #FFFFFF;
 }
-#letras button:disabled, #reiniciar-partida:disabled{
+#letras button:disabled, #reiniciar-partida:disabled {
     opacity: 75%;
 }
 .frame3-juego{
