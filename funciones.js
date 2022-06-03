@@ -1,8 +1,3 @@
-if (palabras.length == 0){
-    importScripts("arrayLocalStorage.js");
-}
-
-
 var palabras = localStorage.getItem('myArray');
 palabras = JSON.parse(palabras);
 
