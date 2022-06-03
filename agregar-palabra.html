@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Juego del Ahorcado</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0 ,maximum-scale=1.0, minimum-scale=1.0">
+        
+    </head>
+    <body>
+        <div class="contenedor">
+            <header class="encabezado">
+                <img id="logo" src="imagenes/Logo.png" alt="Logo Alura">
+            </header>
+            <section class="a-palabra">
+                <input type="text" id="ingresar-palabra-nueva" class="ingresar-palabra-nueva" maxlength="8" autocapitalize="sentences"
+                placeholder="Ingrese una palabra">
+            </section>
+            <section>
+                <div class="frame1">
+                    <img src="imagenes/Info.png" alt="Info" class="text-info">
+                    <p class="info">Máx. de 8 letras</p>
+                </div>
+                <div class="frame3">
+                    <button id="guardar-palabra" onclick="agregarPalabra()"><label id="texto-encriptar">Guardar</label></button>
+                    <button id="cancelar" onclick="location.href='index.html'"><label id="texto-cancelar">Volver</label></button>
+                </div>
+            </section>
+            <footer>
+                <p class="pie-pagina"><a href="https://www.linkedin.com/in/mat%C3%ADasgarroalou/">&copy Matías Garro Alou - Desafío 1 Alura</a></p>
+            </footer>
+        </div>
+    </body>
+    <script src="funciones.js"></script>
+</html>

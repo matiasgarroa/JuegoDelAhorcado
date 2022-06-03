@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Juego del Ahorcado - Jugar</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0 ,maximum-scale=1.0, minimum-scale=1.0">
+        <script src="funciones.js"></script>
+    </head>
+    <body>
+        <div class="contenedor">
+            <header class="encabezado">
+                <img id="logo" src="imagenes/Logo.png" alt="Logo Alura">
+            </header>
+            <section class="juego">
+                <div class="imagen"><img id="img-ahorcado" src="imagenes/Ahorcado0.png" alt="Ahorcado"/></div>
+                 <div>
+                    <p id="palabra-a-adivinar"></p>
+                    <p id="resultado"></p>
+                    <div id="letras">
+                        <button>A</button>
+                        <button>B</button>
+                        <button>C</button>
+                        <button>D</button>
+                        <button>E</button>
+                        <button>F</button>
+                        <button>G</button>
+                        <button>H</button>
+                        <button>I</button>
+                        <button>J</button>
+                        <button>K</button>
+                        <button>L</button>
+                        <button>M</button>
+                        <button>N</button>
+                        <button>Ñ</button>
+                        <button>O</button>
+                        <button>P</button>
+                        <button>Q</button>
+                        <button>R</button>
+                        <button>S</button>
+                        <button>T</button>
+                        <button>U</button>
+                        <button>V</button>
+                        <button>W</button>
+                        <button>X</button>
+                        <button>Y</button>
+                        <button>Z</button>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="frame3-juego">
+                    <button id="reiniciar-partida"><label id="texto-reiniciar">Nuevo juego</label></button>
+                    <button id="desistir" onclick="location.href='index.html'"><label id="texto-desistir">Volver</label></button>
+                </div>
+            </section>
+            <footer>
+                <p class="pie-pagina"><a href="https://www.linkedin.com/in/mat%C3%ADasgarroalou/">&copy Matías Garro Alou - Desafío 1 Alura</a></p>
+            </footer>
+        </div>
+    </body>
+    <script src="juego.js"></script>
+</html>

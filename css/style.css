@@ -1,0 +1,302 @@
+body{
+    font-family: 'Inter';
+    font-style: normal;
+    background: #F3F5FC;
+
+}
+.encabezado, .botones, .pie-pagina{
+    padding: 1em 2em;
+} 
+
+.contenido, .pie-pagina{
+    float: left;
+    box-sizing: border-box;
+}
+
+.encabezado{
+    width: 90%;
+    height: 7.5vh;
+}
+
+.botones{
+    width: auto;
+    height: 70vh;
+}
+
+#nueva-partida, #nueva-palabra{
+    border-radius: 24px;
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#nueva-partida:hover, #nueva-palabra:hover{
+    transform: scale(1.075);
+}
+
+#nueva-partida{
+    width: 317px;
+    height: 114px;
+    padding: 45px;
+
+    background: #0A3871;
+    margin-top: 15vh;
+    margin-left: calc(50% - 158.5px);
+}
+
+#nueva-palabra{
+    width: 280px;
+    height: 67px;
+    padding: 24px;
+
+    border: 1px solid #0A3871;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0A3871;
+    margin-top: 10px;
+    margin-left: calc(50% - 140px);
+}
+
+.texto-partida, .texto-palabra{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.texto-partida{
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.texto-palabra{
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.pie-pagina{
+    width: 100%;
+    padding: 4vh 0;
+    text-align: center;
+}
+
+/* agregar-palabra.html */
+.a-palabra{height: 60vh;}
+.a-palabra, .juego{
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.ingresar-palabra-nueva{
+    width: 50%;
+    margin:0 24%;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+}
+
+.ingresar-palabra-nueva::placeholder{color: #0A3871; text-transform: none;}
+.ingresar-palabra-nueva:focus{outline: none;}
+
+.frame1{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+    padding: 0 25% 1vh;
+    font-size: 12px;
+    line-height: 150%;;
+}
+
+.info:hover{font-weight: bold;}
+
+/*botones de: agregar-palabra.html y jugar.html */
+
+.frame3{
+    width: 100%;
+    gap: 24px;
+    text-align: center;
+}
+
+#guardar-palabra, #cancelar, #reiniciar-partida, #desistir{
+    width: 332px;
+    height: 67px;
+    padding: 24px;
+    gap: 8px;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+#nueva-partida:hover, #nueva-palabra:hover, #guardar-palabra:hover, #cancelar:hover, #reiniciar-partida:hover, #desistir:hover, #letras button:hover{
+    transform: scale(1.075);
+}
+
+#nueva-partida:hover, #nueva-palabra:hover, #guardar-palabra:active, #cancelar:active, #reiniciar-partida:active, #desistir:active, #letras button:active{
+    opacity: 75%;
+}
+
+#guardar-palabra, #reiniciar-partida{
+    margin: 0 15px 0 -15px;
+    background: #0A3871;
+    color: #FFFFFF;
+}
+
+#cancelar, #desistir{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    background: none;
+    color: #0A3871;
+}
+
+/* jugar.html */
+
+.juego{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+#img-ahorcado{
+    width: 200px;
+}
+
+#palabra-a-adivinar{
+    height: 6em;
+}
+
+#palabra-a-adivinar span{
+    vertical-align: bottom;
+    font-size: 48px;
+    color: #0A3871;
+    border-bottom: 2px solid #0A3871;
+    width: 30px;
+    text-align: center;
+    margin-right: 6px;
+    display: inline-block;
+}
+
+#letras{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+#letras button{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 40px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 8px;
+    background: #0A3871;
+    color: #FFFFFF;
+}
+#letras button:disabled, #reiniciar-partida:disabled{
+    opacity: 75%;
+}
+.frame3-juego{
+    width: 100%;
+    height: 15vh;
+    gap: 24px;
+    text-align: center;
+}
+
+.a-palabra{
+    width: 90%;
+}
+.ingresar-palabra-nueva{
+    height: 200px;
+}
+
+@media screen and (max-width: 768px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .encabezado, .botones, .pie-pagina{
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    } 
+    .encabezado{
+        padding: 3vh 0;
+    }
+    .frame3{
+        padding-bottom: 5vh;
+    }
+    .botones{
+        height: 65vh;
+    }
+    .juego{
+        width: 90%;
+        padding:auto 0;
+        display: block;
+        text-align: center;
+    }
+    #imagen{
+        width: 100%;
+    }
+    #palabra-a-adivinar{
+        padding-top: 5vh;
+        text-align: center end;
+        margin: auto;
+        width: 100%;
+        height: 15vh;
+    }
+    #resultado{
+        padding: auto 2px;
+    }
+    #nueva-partida:hover, #nueva-palabra:hover, #guardar-palabra:hover, #cancelar:hover, #reiniciar-partida:hover, #desistir:hover, #letras button:hover{
+        transform: none;
+    }
+    
+    #nueva-partida:hover, #nueva-palabra:hover, #guardar-palabra:active, #cancelar:active, #reiniciar-partida:active, #desistir:active, #letras button:active{
+        opacity: 100%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    #palabra-a-adivinar{
+        height: 10vh;
+    }
+    .frame3{
+        display: block;
+    }
+    .frame3-juego{
+        display: block;
+        padding-bottom: 15px;
+    }
+    #reiniciar-partida, #desistir, #guardar-palabra, #cancelar{
+        width: 90%;
+        margin: 0 auto 5px auto;
+    }
+    .a-palabra{
+        margin: 0 auto;
+        width: 90%;
+        height: 50vh;
+        text-align: left;
+    }
+    #ingresar-palabra-nueva{
+        width: 100%;
+        margin: 0;
+    }
+}
