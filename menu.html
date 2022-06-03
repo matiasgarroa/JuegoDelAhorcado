@@ -15,24 +15,13 @@
             <header class="encabezado">
                 <img id="logo" src="imagenes/Logo.png" alt="Logo Alura">
             </header>
-            <section class="a-palabra">
-                <input type="text" id="ingresar-palabra-nueva" class="ingresar-palabra-nueva" maxlength="8" autocapitalize="sentences"
-                placeholder="Ingrese una palabra">
-            </section>
-            <section>
-                <div class="frame1">
-                    <img src="imagenes/Info.png" alt="Info" class="text-info">
-                    <p class="info">Máx. de 8 letras</p>
-                </div>
-                <div class="frame3">
-                    <button id="guardar-palabra" onclick="agregarPalabra()"><label id="texto-encriptar">Guardar</label></button>
-                    <button id="cancelar" onclick="location.href='menu.html'"><label id="texto-cancelar">Volver</label></button>
-                </div>
+            <section class="botones">
+                <button id="nueva-partida" onclick="location.href='jugar.html'"><label class="texto-partida">Nueva Partida</label></button>
+                <button id="nueva-palabra" onclick="location.href='agregar-palabra.html'"><label class="texto-palabra">Agregar nueva palabra</label></button>
             </section>
             <footer>
                 <p class="pie-pagina"><a href="https://www.linkedin.com/in/mat%C3%ADasgarroalou/">&copy Matías Garro Alou - Desafío 1 Alura</a></p>
             </footer>
         </div>
     </body>
-    <script src="funciones.js"></script>
 </html>
